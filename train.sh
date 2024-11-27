@@ -1,0 +1,12 @@
+python -m pdb train.py \
+ --epoch_num 20 \
+ --ckpt_path output \
+ --encoder_bsz 32 \
+ --device cuda:1 \
+ --encoder_model bert-base-uncased \
+ --roberta_lr 1e-5 \
+ --scorer_lr 1e-5 \
+ --train_data_file data_combine/train_data_q1.json \
+ --val_data_file data_combine/val_data_q1.json \
+ --start_ep 24 \
+ --ckpt_file output/2024-11-22-20-30/encoder_ep23.ckpt
